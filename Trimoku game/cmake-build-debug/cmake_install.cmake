@@ -1,4 +1,4 @@
-# Install script for directory: E:/my_credit/learning-project/Trimoku game
+# Install script for directory: E:/github/learning-project/Trimoku game
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/my_credit/learning-project/Trimoku game/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/github/learning-project/Trimoku game/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
