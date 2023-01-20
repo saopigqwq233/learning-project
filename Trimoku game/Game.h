@@ -1,24 +1,25 @@
 #ifndef TRIMOKU_GAME_GAME_H
 #define TRIMOKU_GAME_GAME_H
-//å¤´æ–‡ä»¶
+//Í·ÎÄ¼ş
 #include "stdio.h"
 #include "stdlib.h"
 #include "time.h"
-//å®å®šä¹‰
-//3Ã—3æ£‹ç›˜
+//ºê¶¨Òå
+//3¡Á3ÆåÅÌ
 #define ROW 3
 #define COL 3
-//å‡½æ•°å£°æ˜
-void Menu();//å±•ç¤ºé€‰æ‹©èœå•
-int Decide();//ç”¨æˆ·é€‰æ‹©æ¸¸æˆæˆ–è€…é€€å‡º
-void BegainGame();//æ¸¸æˆå¼€å§‹å‡½æ•°
-void EndGame();//æ¸¸æˆç»“æŸå‡½æ•°
-//æ¸¸æˆä¸­ä¼šç”¨åˆ°çš„å‡½æ•°
-void InitBoard(char **Board);//åˆå§‹åŒ–æ£‹ç›˜
-void PrintBoard(char **Board);//æ‰“å°æ£‹ç›˜åŠå…¶å†…å®¹
-void PlayerMove(char **Board);//ç©å®¶ä¸‹æ£‹
-void ComputerMove(char **Board);//ç”µè„‘ä¸‹æ£‹
-char IsWin(char **Board);//åˆ¤æ–­æ˜¯å¦èµ¢,è°èµ¢è¿”å›è°çš„ç¬¦å·
-char IsFull(char **Board);//åˆ¤æ–­æ˜¯å¦å¹³å±€
-void PrintOut(char **Board);//æ‰“å°è·èƒœæƒ…å†µ
+//Íæ¼Ò·ûºÅÎª@£¬µçÄÔ·ûºÅÎª¡Á
+//º¯ÊıÉùÃ÷
+void Menu();//Õ¹Ê¾Ñ¡Ôñ²Ëµ¥
+int Decide();//ÓÃ»§Ñ¡ÔñÓÎÏ·»òÕßÍË³ö
+void BegainGame();//ÓÎÏ·¿ªÊ¼º¯Êı
+void EndGame();//ÓÎÏ·½áÊøº¯Êı
+//ÓÎÏ·ÖĞ»áÓÃµ½µÄº¯Êı
+void InitBoard(char **Board);//³õÊ¼»¯ÆåÅÌ
+void PrintBoard(char **Board);//´òÓ¡ÆåÅÌ¼°ÆäÄÚÈİ
+void PlayerMove(char **Board);//Íæ¼ÒÏÂÆå
+void ComputerMove(char **Board);//µçÄÔÏÂÆå
+char IsWin(char **Board);//ÅĞ¶ÏÊÇ·ñÓ®,Ë­Ó®·µ»ØË­µÄ·ûºÅ,·ñÔò·µ»ØNULL
+char IsFull(char **Board);//ÅĞ¶ÏÊÇ·ñÆ½¾Ö
+void PrintOut(char **Board);//´òÓ¡»ñÊ¤Çé¿ö
 #endif //TRIMOKU_GAME_GAME_H

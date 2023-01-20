@@ -14,7 +14,7 @@ int Decide()
     short int choice;
     do
     {
-        scanf("%d",&choice);
+        scanf("%hd",&choice);
         if(choice==1)
             return 1;
         else if(choice==0)
@@ -25,12 +25,17 @@ int Decide()
 }
 void BegainGame()
 {
+    char flag;
     char Board[ROW][COL];//定义一个ROW×COL规格的二维数组
     InitBoard(Board);
     do
     {
         PrintBoard(Board);
         PlayerMove(Board);
+        if((flag=IsWin(Board)))
+        {
+            if(flag=='')
+        }
     }
     while(1);
 }
