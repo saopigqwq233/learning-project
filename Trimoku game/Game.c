@@ -32,10 +32,19 @@ void BegainGame()
     {
         PrintBoard(Board);
         PlayerMove(Board);
-        if((flag=IsWin(Board)))
+/*        if((flag=IsWin(Board)))
         {
-            if(flag=='')
-        }
+            if(flag==' ')
+        }*/
     }
     while(1);
+}
+void PrintBoard(char **Board)
+{
+    for (int i = 0; i < ROW; ++i)
+    {
+        printf("%c |%c |%c\n",Board[i][0],Board[i][1],Board[i][2]);
+        if(i!=ROW-1)
+            printf("--------");
+    }
 }
