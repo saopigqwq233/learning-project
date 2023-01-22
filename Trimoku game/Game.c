@@ -48,3 +48,13 @@ void PrintBoard(char **Board)
             printf("--------");
     }
 }
+char IsWin(char **Board)
+{
+
+}
+char IsFull(char **Board)
+{
+
+}
+void PrintOut(char **Board)
+{}
